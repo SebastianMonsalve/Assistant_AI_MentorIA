@@ -1,4 +1,4 @@
-def construir_prompt(prompt: str, type: str) -> str:
+def _prompt(prompt: str, type: str) -> str:
     prompt = prompt.strip()
 
     if type == "Personalizado":
