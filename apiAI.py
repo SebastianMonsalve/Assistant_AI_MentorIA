@@ -12,6 +12,8 @@ def generar(prompt):
         print("⌛Enviando")
         response = client.chat.completions.create(
             model="openai/gpt-3.5-turbo",
+            # model="deepseek/deepseek-r1:free",
+            # model="mistralai/mistral-7b-instruct:free",
             messages=[
                 {"role": "user", "content": prompt}
             ]
